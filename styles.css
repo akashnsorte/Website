@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #2d3e50;
+  background-image: linear-gradient(to bottom right, #2d3e50, #4a6b82, #7f8c8d);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#hero {
+  background-image: url(https://via.placeholder.com/1200x600);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #333;
+}
