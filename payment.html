@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Page</title>
+    <style>
+      /* Add your CSS code here */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      select {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        box-sizing: border-box;
+      }
+
+      select {
+        height: 2.5rem;
+      }
+
+      button[type="submit"] {
+        display: block;
+        margin-top: 1rem;
+        background-color: #0077cc;
+        color: #fff;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        transition: background-color 0.2s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #005ea6;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Payment Information</h1>
+      <label for="name">Name on Card</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="card-number" pattern="[0-9]{13,16}" required>
+
+      <label for="expiration-date">Expiration Date</label>
+      <select id="expiration-date" name="expiration-date" required>
+        <option value="" selected disabled hidden>Month/Year</option>
+        <option value="01/2022">01/2022</option>
+        <option value="02/2022">02/2022</option>
+        <option value="03/2022">03/2022</option>
+        <!-- Add more options for future months/years -->
+      </select>
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" required>
+      
+      <a href="confirmation.html">submit</a>
+      <a href="website.html">Home</a>
+
+    </form>
+  </body>
+</html>
